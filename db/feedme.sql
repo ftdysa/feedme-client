@@ -4,6 +4,7 @@ CREATE TABLE site_user (
     username varchar(255) NOT NULL,
     password varchar(255) NOT NULL,
     PRIMARY KEY (id)
+    UNIQUE (username)
 );
 
 CREATE SEQUENCE recipe_id_seq;
