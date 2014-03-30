@@ -2,10 +2,12 @@
 
 /* Controllers */
 
-angular.module('myApp.controllers', [])
-  .controller('MyCtrl1', [function() {
+var feedme = angular.module('feedme', []);
 
-  }])
-  .controller('MyCtrl2', [function() {
+feedme.controller('RecipeListCtrl', ['$scope', '$http', function ($scope, $http) {
+    $http.get('recipes/recipes.json').success(function(data) {
+        $scope.recipes = data;
+    })
+}]);
 
-  }]);
+feedme.controller('MyCtrl2', [function() {}]);
