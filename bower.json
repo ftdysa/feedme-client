@@ -1,0 +1,25 @@
+{
+  "name": "feedme",
+  "version": "0.1.0",
+  "authors": [
+    "Fred Dysart <ftdysa@gmail.com>"
+  ],
+  "description": "Recipe database and suggestion engine",
+  "license": "proprietary",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery": "~2.1.0",
+    "angular-route": "~1.2.15",
+    "angular-loader": "~1.2.15",
+    "angular-mocks": "~1.2.15",
+    "angular": "~1.2.15"
+  }
+}

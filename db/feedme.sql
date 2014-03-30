@@ -29,6 +29,13 @@ CREATE TABLE measurement (
     UNIQUE (name)
 );
 
+CREATE TABLE preparation (
+    id integer not null,
+    name varchar(64) NOT NULL,
+    PRIMARY KEY (id),
+    UNIQUE (name)
+);
+
 CREATE SEQUENCE ingredient_id_seq;
 CREATE TABLE ingredient (
     id integer NOT NULL DEFAULT nextval('ingredient_id_seq'),
