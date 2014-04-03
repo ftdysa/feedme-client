@@ -2,12 +2,12 @@
 
 
 // Declare app level module which depends on filters, and services
-var feedme = angular.module('feedme', [
+var feedme = angular.module('feedmeApp', [
   'ngRoute',
-  'myApp.filters',
-  'myApp.services',
-  'myApp.directives',
-  'myApp.controllers'
+  'feedmeFilters',
+  'feedmeServices',
+  'feedmeDirectives',
+  'feedmeControllers'
 ]);
 
 feedme.config(['$routeProvider', function($routeProvider) {

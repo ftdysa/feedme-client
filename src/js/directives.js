@@ -2,8 +2,8 @@
 
 /* Directives */
 
-
-angular.module('myApp.directives', []).
+var feedmeDirectives = angular.module('feedmeDirectives', []);
+feedmeDirectives.
   directive('appVersion', ['version', function(version) {
     return function(scope, elm, attrs) {
       elm.text(version);
